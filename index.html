@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHEMISTRY ADVENTURE 3D</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="background-glow glow1"></div>
+  <div class="background-glow glow2"></div>
+
+  <header class="header">
+    <div class="brand">
+      <div class="brand-icon">⚛️</div>
+      <div>
+        <h1>CHEMISTRY <span>ADVENTURE</span></h1>
+        <p>3D CHEMICAL WORLD</p>
+      </div>
+    </div>
+
+    <div class="header-stats">
+      <div class="stat-box">
+        <small>BALL</small>
+        <strong id="score">0</strong>
+      </div>
+      <div class="stat-box">
+        <small>REKORD</small>
+        <strong id="record">0</strong>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="game-card">
+
+      <div class="top-info">
+        <div>
+          <span class="level-tag" id="levelTag">1-BOSQICH</span>
+          <h2 id="stageName">Kristall laboratoriyasi</h2>
+          <p id="stageDescription">Kerakli elementlarni yig‘ing!</p>
+        </div>
+
+        <div class="timer-box">
+          <span>⏱️</span>
+          <strong id="timer">90</strong>
+          <small>SEKUND</small>
+        </div>
+      </div>
+
+      <div class="progress-info">
+        <span>Sayohat jarayoni</span>
+        <span id="collectionText">0 / 3</span>
+      </div>
+
+      <div class="progress-bar">
+        <div id="progress"></div>
+      </div>
+
+      <div class="mission-box">
+        <div class="mission-icon">🧪</div>
+        <div>
+          <small>ASOSIY VAZIFA</small>
+          <h3 id="missionText">3 ta kristallni toping va portalni oching.</h3>
+          <p id="missionHint">Xaritada yaltirab turgan elementlarni yig‘ing.</p>
+        </div>
+      </div>
+
+      <div class="world-heading">
+        <div>
+          <h3>🌍 KIMYOVIY DUNYO</h3>
+          <p>Qahramonni boshqarib, elementlarni yig‘ing</p>
+        </div>
+        <div class="world-status" id="worldStatus">PORTAL YOPIQ 🔒</div>
+      </div>
+
+      <div class="game-board" id="gameBoard" aria-label="O‘yin xaritasi"></div>
+
+      <div class="mobile-controls">
+        <button class="control-btn up" data-move="up">▲</button>
+        <div class="control-middle">
+          <button class="control-btn" data-move="left">◀</button>
+          <button class="control-btn" data-move="down">▼</button>
+          <button class="control-btn" data-move="right">▶</button>
+        </div>
+        <p>Telefon uchun boshqaruv</p>
+      </div>
+
+      <div class="inventory">
+        <div>
+          <h3>🎒 Yig‘ilgan elementlar</h3>
+          <p id="inventoryText">Hali element yig‘ilmadi</p>
+        </div>
+        <button id="soundBtn" class="sound-btn">🔊 Ovoz yoqilgan</button>
+      </div>
+
+      <div id="message" class="message hidden"></div>
+
+      <div class="action-row">
+        <button id="restartBtn" class="secondary-btn">↻ Qayta boshlash</button>
+        <button id="nextBtn" class="next-btn hidden">KEYINGI BOSQICH ➜</button>
+      </div>
+
+      <div id="quizBox" class="quiz-box hidden">
+        <div class="quiz-icon">🧠</div>
+        <small>KIMYO TOPSHIRIG‘I</small>
+        <h3 id="quizQuestion">Savol</h3>
+        <div id="quizOptions" class="quiz-options"></div>
+        <p id="quizFeedback"></p>
+      </div>
+
+      <div id="endScreen" class="end-screen hidden">
+        <div class="end-icon" id="endIcon">🏆</div>
+        <h2 id="endTitle">Sarguzasht yakunlandi!</h2>
+        <p id="endDescription">Ajoyib natija!</p>
+        <div class="final-score">
+          <small>JAMI BALL</small>
+          <strong id="finalScore">0</strong>
+        </div>
+        <button id="playAgainBtn" class="next-btn">QAYTA O‘YNASH ↻</button>
+      </div>
+
+    </section>
+
+    <section class="tips">
+      <div class="tip-card">
+        <span>💎</span>
+        <strong>Kristallar</strong>
+        <small>Elementlarni yig‘ing</small>
+      </div>
+      <div class="tip-card">
+        <span>🧠</span>
+        <strong>Bilim</strong>
+        <small>Kimyo savollarini yeching</small>
+      </div>
+      <div class="tip-card">
+        <span>🚪</span>
+        <strong>Portal</strong>
+        <small>Keyingi dunyoga o‘ting</small>
+      </div>
+    </section>
+
+    <footer>CHEMISTRY ADVENTURE 3D · EDUCATIONAL GAME</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
